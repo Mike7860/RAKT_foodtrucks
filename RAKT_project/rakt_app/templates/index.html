@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Truck Finder</title>
+</head>
+<body>
+    <h1>Find Nearby Food Trucks</h1>
+    <div>
+        <label for="latitude">Latitude:</label>
+        <input type="text" id="latitude">
+        <label for="longitude">Longitude:</label>
+        <input type="text" id="longitude">
+        <button onclick="findFoodTrucks()">Find Food Trucks</button>
+    </div>
+    <div id="result"></div>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

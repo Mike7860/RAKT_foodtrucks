@@ -27,4 +27,4 @@ class FoodTruckAPIView(APIView):
 
 #main view
 def main_view(request):
-    return render(request, 'index.html', context={'your_data': 'some_data'})
+    return render(request, 'index.html', context={'data': 'data'})
